@@ -1,0 +1,38 @@
+@import "../../assets/styles/colors.less";
+
+.input__profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 13px;
+  width: 100%;
+  border-bottom: 1px solid @grey-light-1;
+  padding: 0 0 10px 0;
+  margin: 0 0 10px 0;
+  display: flex;
+  align-items: center;
+
+  &.input_lastChild {
+    border-bottom: none;
+    margin: 0;
+  }
+
+  .input__profile_name {
+    width: 66%;
+    color: @grey-light-3;
+    text-align: right;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+  }
+
+  .input__profile_label {
+    color: @grey-dark-1;
+    cursor: default;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+  }
+}

@@ -1,0 +1,59 @@
+@import "../../assets/styles/colors.less";
+
+.input {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 13px;
+  width: 280px;
+
+  &.input_marginBottom {
+    margin-bottom: 30px;
+  }
+
+  .input__name {
+    border-bottom: 1px solid @blue-light-1;
+    padding: 0 0 7px 0;
+    width: 100%;
+    color: @grey-dark-1;
+  }
+  .input__label {
+    position: absolute;
+    color: grey-light-3;
+    pointer-events: none;
+    top: 2px;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  .input__name:focus ~ .input__label,
+  .input__name:not(:focus):valid ~ .input__label {
+    top: -14px;
+    font-size: 10px;
+  }
+  .input__error {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    color: @red-light-2;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 8px;
+  }
+  input[type="file"] {
+    display: none;
+  }
+  .input__file {
+    width: 122px;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: @blue-light-1;
+  }
+}

@@ -1,0 +1,20 @@
+<div class="input {{style}}">
+  {{#if fileText}}
+    <label>
+      <input class="input__name" type="{{type}}" name="{{name}}" />
+      <div class="input__file">{{fileText}}</div>
+    </label>
+  {{else}}
+    <input
+      class="input__name"
+      type="{{type}}"
+      name="{{name}}"
+      value="{{value}}"
+      required
+    />
+    <label class="input__label" for="{{name}}">{{label}}</label>
+  {{/if}}
+  {{#if errorText}}
+    <span class="input__error">{{errorText}}</span>
+  {{/if}}
+</div>

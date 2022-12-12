@@ -1,0 +1,50 @@
+@import "../../assets/styles/colors.less";
+
+.modal {
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+
+  &.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal__container {
+    background: @white;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
+    border-radius: 12px;
+    padding: 40px 30px;
+  }
+
+  .modal__name {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: @grey-dark-1;
+
+    &.modal__name-error {
+      color: @red-light-2;
+    }
+  }
+
+  .modal__input {
+    padding: 44px 0;
+  }
+
+  .modal__error-label {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 11px;
+    text-align: center;
+    color: @red-light-2;
+    margin: 14px 0 0 0;
+  }
+}

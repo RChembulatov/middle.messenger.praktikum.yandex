@@ -1,0 +1,11 @@
+<div class="login">
+  <div class="inputs">
+    <div class="login__title">Вход</div>
+    {{> input type="text" name="login" label="Логин" errorText="Неверный логин" style="input_marginBottom"}}
+    {{> input type="password" name="password" label="Пароль" errorText="Неверный пароль"}}
+  </div>
+  <div class="buttons">
+    {{> button style="btn-primary btn-marginBottom" label="Авторизоваться" }}
+    {{> button style="btn-secondary" label="Нет аккаунта?" }}
+  </div>
+</div>

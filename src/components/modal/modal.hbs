@@ -1,0 +1,14 @@
+<div class="modal active">
+  <div class="modal__container">
+    <div class="modal__name {{nameStyle}}">{{name}}</div>
+    <div class="modal__input">
+      {{> input fileText=fileText type=inputType name=inputName label=inputLabel errorText=inputError}}
+    </div>
+    <div class="modal__button">
+      {{> button style="btn-primary" label=labelButton }}
+    </div>
+    {{#if errorLabel}}
+        <div class="modal__error-label">{{errorLabel}}</div>
+    {{/if}}
+  </div>
+</div>
