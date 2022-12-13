@@ -1,16 +1,18 @@
 <div class="registration">
-  <div class="inputs">
-    <div class="registration__title">Регистрация</div>
-    {{> input type="email" name="email" label="Почта" errorText="" style="input_marginBottom"}}
-    {{> input type="text" name="login" label="Логин" errorText="" style="input_marginBottom"}}
-    {{> input type="text" name="first_name" label="Имя" errorText="" style="input_marginBottom"}}
-    {{> input type="text" name="second_name" label="Фамилия" errorText="" style="input_marginBottom"}}
-    {{> input type="tel" name="phone" label="Телефон" errorText="" style="input_marginBottom"}}
-    {{> input type="password" name="password" label="Пароль" style="input_marginBottom"}}
-    {{> input type="password" name="password" label="Пароль" errorText="Пароли не совпадают"}}
-  </div>
-  <div class="buttons">
-    {{> button style="btn-primary btn-marginBottom" label="Зарегистрироваться" }}
-    {{> button style="btn-secondary" label="Войти" }}
-  </div>
+  <form class="send">
+    <div class="inputs">
+      <h3 class="registration__title">Регистрация</h3>
+      {{> input type="email" name="email" label="Почта" errorText="" style="input_marginBottom"}}
+      {{> input type="text" name="login" label="Логин" errorText="" style="input_marginBottom"}}
+      {{> input type="text" name="first_name" label="Имя" errorText="" style="input_marginBottom"}}
+      {{> input type="text" name="second_name" label="Фамилия" errorText="" style="input_marginBottom"}}
+      {{> input type="tel" name="phone" label="Телефон" errorText="" style="input_marginBottom"}}
+      {{> input type="password" name="password" label="Пароль" style="input_marginBottom"}}
+      {{> input type="password" name="password" label="Пароль" errorText="Пароли не совпадают"}}
+    </div>
+    <div class="buttons">
+      {{> button style="btn-primary btn-marginBottom" label="Зарегистрироваться" }}
+      {{> button style="btn-secondary" label="Войти" }}
+    </div>
+  </form>
 </div>
