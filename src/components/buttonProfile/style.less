@@ -1,0 +1,25 @@
+@import "../../assets/styles/colors.less";
+
+.btn-profile {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 13px;
+  color: @blue-light-1;
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid @grey-light-1;
+
+  span {
+    cursor: pointer;
+  }
+
+  &.btn-profile-danger {
+    color: @red-light-1;
+  }
+
+  &.btn-profile-last_child {
+    border-bottom: none;
+    margin: 0;
+  }
+}

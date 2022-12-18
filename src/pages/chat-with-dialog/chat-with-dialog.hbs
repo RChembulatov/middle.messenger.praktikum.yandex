@@ -1,0 +1,134 @@
+<div class="container">
+  <div class="chat">
+    <div class="chat__sidebar">
+      <div class="chat__sidebar-header">
+        <div class="chat__sidebar-profile">
+          <div class="chat__sidebar-profile-container">
+            <a class="chat__sidebar-profile-link" href="/profile">
+              <div class="chat__sidebar-profile-text">Профиль</div>
+              <div class="chat__sidebar-profile-img"></div>
+            </a>
+          </div>
+        </div>
+        <div class="chat__sidebar-search">
+          <input type="text" name="search" placeholder="Поиск" />
+        </div>
+      </div>
+      <div class="chat__sidebar-items dialogs">
+        <div class="dialog-item">
+          <div class="dialog-content">
+            <div class="dialog-avatar"></div>
+            <div class="dialog-detail">
+              <h3 class="dialog-name">Андрей</h3>
+              <p class="dialog-message">Изображение</p>
+            </div>
+          </div>
+          <div class="dialog-info">
+            <div class="dialog-date">10:49</div>
+            <div class="dialog-count">2</div>
+          </div>
+        </div>
+        <div class="dialog-item">
+          <div class="dialog-content">
+            <div class="dialog-avatar"></div>
+            <div class="dialog-detail">
+              <h3 class="dialog-name">Илья</h3>
+              <p class="dialog-message">
+                Друзья, у меня для вас особенный выпуск новостей! Друзья, у меня
+                для вас особенный выпуск новостей!
+              </p>
+            </div>
+          </div>
+          <div class="dialog-info">
+            <div class="dialog-date">15:12</div>
+            <div class="dialog-count">6</div>
+          </div>
+        </div>
+        <div class="dialog-item active">
+          <div class="dialog-content">
+            <div class="dialog-avatar"></div>
+            <div class="dialog-detail">
+              <h3 class="dialog-name">Вадим</h3>
+              <p class="dialog-message">Вы: Круто!</p>
+            </div>
+          </div>
+          <div class="dialog-info">
+            <div class="dialog-date">Пт</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="chat__list">
+      <div class="chat__list-header">
+        <div class="chat__list-user">
+          <div class="chat__list-avatar"></div>
+          <h3 class="chat__list-name">Вадим</h3>
+        </div>
+        <div class="chat__list-settings">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="chat__list-settings-select">
+          <div class="chat__list-settings-select-item">
+            <div class="chat__list-settings-select-add-user"></div>
+            <div class="chat__list-settings-select-label">Добавить пользователя</div>
+          </div>
+          <div class="chat__list-settings-select-item">
+            <div class="chat__list-settings-select-remove-user"></div>
+            <div class="chat__list-settings-select-label">Удалить пользователя</div>
+          </div>
+        </div>
+      </div>
+      <div class="chat__list-body">
+        <div class="chat__list-content">
+          <div class="chat__list-date">19 июня</div>
+          <div class="chat__list-message">
+            <p>
+              Привет! Смотри, тут всплыл интересный кусок лунной космической
+              истории — НАСА в какой-то момент попросила Хассельблад
+              адаптировать модель SWC для полетов на Луну. Сейчас мы все знаем
+              что астронавты летали с моделью 500 EL — и к слову говоря, все
+              тушки этих камер все еще находятся на поверхности Луны, так как
+              астронавты с собой забрали только кассеты с пленкой.
+              <br />
+              <br />
+              Хассельблад в итоге адаптировал SWC для космоса, но что-то пошло
+              не так и на ракету они так никогда и не попали. Всего их было
+              произведено 25 штук, одну из них недавно продали на аукционе за
+              45000 евро.
+            </p>
+            <span class="chat__list-time">11:56</span>
+          </div>
+          <div class="chat__list-answer">
+            <p>Круто!</p>
+            <span class="chat__list-time read">12:00</span>
+          </div>
+        </div>
+        <div class="chat__list-send">
+          <div class="chat__list-send-files-select"></div>
+          <div class="chat__list-send-files-items">
+            <div class="chat__list-send-files-item">
+              <div class="chat__list-send-files-photo"></div>
+              <div class="chat__list-send-files-label">Фото или Видео</div>
+            </div>
+            <div class="chat__list-send-files-item">
+              <div class="chat__list-send-files-file"></div>
+              <div class="chat__list-send-files-label">Файл</div>
+            </div>
+            <div class="chat__list-send-files-item">
+              <div class="chat__list-send-files-location"></div>
+              <div class="chat__list-send-files-label">Локация</div>
+            </div>
+          </div>
+
+          <form class="chat__list-send-message send">
+            <input type="text" name="message" placeholder="Сообщение" />
+            <button class="chat__list-send-buton"></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    {{> modal name="Добавить пользователя" inputType="text" inputName="login" inputLabel="Логин" labelButton="Добавить" value="ivanivanov"}}
+  </div>
+</div>
